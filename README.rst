@@ -1,7 +1,7 @@
 jsobj: JavaScript-Style Objects in Python
 =========================================
 
-jsobj provides JavaScript-Style Objects in Python. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <http://docs.python.org/library/>`_. It is based on jsobject, but allows for access to non-existant keys (returning None).
+jsobj provides JavaScript-Style Objects in Python. It is based on jsobject, but returns None if you try accessing non-existent keys instead of throwing an exception.
 
 Homepage and documentation: https://github.com/gkovacs/jsobj
 
@@ -46,4 +46,4 @@ MIT
 Credits
 -------
 
-Geza Kovacs. Based on jsobject by Marcin Wierzbanowski
+`Geza Kovacs <https://github.com/gkovacs>`_. Based on jsobject by Marcin Wierzbanowski
