@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 7dd958922daa0826b681e2a8859192e6
+# md5: bd2b40564e89f760993f188ccec2c416
 # coding: utf-8
 
 """
@@ -11,15 +11,15 @@ Copyright (c) 2014, Geza Kovacs. Based on JsObject by Marcin Wierzbanowski.
 License: MIT (see LICENSE for details)
 """
 #from __future__ import with_statement
-import os
-try:
-  HERE = os.path.abspath(os.path.dirname(__file__))
-except:
-  HERE = os.path.abspath(os.getcwd())
+#import os
+#try:
+#  HERE = os.path.abspath(os.path.dirname(__file__))
+#except:
+#  HERE = os.path.abspath(os.getcwd())
 
 __author__ = 'Geza Kovacs'
-__version__ = open(os.path.join(HERE, 'VERSION')).read()[:-1]
-#__version__ = '1.0.0'
+#__version__ = open(os.path.join(HERE, 'VERSION')).read()[:-1]
+__version__ = '1.0.0'
 __license__ = 'MIT'
 
 
