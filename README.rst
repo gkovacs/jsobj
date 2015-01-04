@@ -1,33 +1,13 @@
-.. image:: https://pypip.in/version/jsobject/badge.svg
-    :target: https://pypi.python.org/pypi/jsobject/
-    :alt: Latest Version
+jsobj: JavaScript-Style Objects in Python
+=========================================
 
-.. image:: https://pypip.in/download/jsobject/badge.svg
-    :target: https://pypi.python.org/pypi/jsobject/
-    :alt: Downloads
+jsobj provides JavaScript-Style Objects in Python. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <http://docs.python.org/library/>`_. It is based on jsobject, but allows for access to non-existant keys (returning None).
 
-.. image:: https://pypip.in/py_versions/jsobject/badge.svg
-    :target: https://pypi.python.org/pypi/jsobject/
-    :alt: Supported Python versions
-
-.. image:: https://pypip.in/license/jsobject/badge.svg
-    :target: https://pypi.python.org/pypi/jsobject/
-    :alt: License
-
-.. image:: https://pypip.in/status/jsobject/badge.svg
-    :target: https://pypi.python.org/pypi/jsobject/
-    :alt: Development Status
-
-jsobject: Objects for Humans
-============================
-
-jsobject is simple implementation JavaScript-Style Objects in Python. It is distributed as a single file module and has no dependencies other than the `Python Standard Library <http://docs.python.org/library/>`_.
-
-Homepage and documentation: https://mavier.github.io/jsobject
+Homepage and documentation: https://github.com/gkovacs/jsobj
 
 
-Example: "Hello World" with jsobject
-------------------------------------
+Example: "Hello World" with jsobj
+---------------------------------
 
 .. code-block:: python
 
@@ -49,31 +29,21 @@ Example: "Hello World" with jsobject
   print(jso.objectA.c.d)   # e
   print(jso.objectA.c.f.g) # h
 
-Download and Install
---------------------
 
-Install the latest stable release with ``pip install jsobject``, ``easy_install -U jsobject`` or download `jsobject.py <https://github.com/mavier/jsobject/raw/master/jsobject.py>`__ (unstable) into your project directory. There are no hard dependencies other than the Python standard library. Jsobject runs with **Python 2.6+ and 3.x**.
+Installation
+------------
+::
 
-Testing
-_______
-
-To run the tests use the `nosetest`.
-
-.. image:: https://travis-ci.org/mavier/jsobject.png?branch=master
-    :target: https://travis-ci.org/mavier/jsobject
-
-.. image:: https://coveralls.io/repos/mavier/jsobject/badge.png
-    :target: https://coveralls.io/r/mavier/jsobject
+  $ pip install jsobj
 
 
 License
 -------
 
-Code and documentation are available according to the `MIT License <https://raw.github.com/mavier/jsobject/master/LICENSE>`__.
+MIT
 
-Tips
+
+Credits
 -------
 
-.. image:: https://img.shields.io/gratipay/mavier.svg
-    :target: https://gratipay.com/mavier
-    :alt: Tips
+Geza Kovacs. Based on jsobject by Marcin Wierzbanowski

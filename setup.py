@@ -37,27 +37,28 @@ class PyTest(TestCommand):
 HERE = os.path.abspath(os.path.dirname(__file__))
 readme = open(os.path.join(HERE, 'README.rst')).read()
 
-if not os.path.exists('VERSION'):
-    os.system("git describe --tags | cut -c 2- > VERSION")
+#if not os.path.exists('VERSION'):
+#    os.system("git describe --tags | cut -c 2- > VERSION")
 
-version = open(os.path.join(HERE, 'VERSION')).read()[:-1]
+#version = open(os.path.join(HERE, 'VERSION')).read()[:-1]
+
+version = '1.0.0'
 
 setup(
-    name='jsobject',
+    name='jsobj',
     version=version,
-    description='Jsobject is simple implementation JavaScript-Style Objects \
+    description='Jsobj provides JavaScript-Style Objects \
                  in Python.',
     long_description=readme,
-    author='Marcin Wierzbanowski',
-    author_email='marcin@wierzbanowski.com',
-    url='http://mavier.github.io/jsobject',
+    author='Geza Kovacs',
+    author_email='geza0kovacs@gmail.com',
+    url='https://github.com/gkovacs/jsobj',
     packages=find_packages(exclude=['ez_setup', 'tests', 'tests.*']),
-    data_files=['VERSION'],
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
     license='MIT',
     platforms='any',
-    keywords=['jsobject', 'Object', 'json', 'chain', 'javascript'],
+    keywords=['jsobj', 'Object', 'json', 'chain', 'javascript'],
     classifiers=[
         'Development Status :: 4 - Beta',
         'Intended Audience :: Developers',

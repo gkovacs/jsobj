@@ -2,7 +2,7 @@
 
 import unittest
 import pytest
-from jsobject import Object
+from jsobj import Object
 
 """Tests for jsobject created from python dict"""
 
@@ -127,8 +127,9 @@ class ObjectTestcase(unittest.TestCase):
             Object([1, 2, 3])
 
     def test_get_not_exist(self):
-        with pytest.raises(AttributeError):
-            self.js.objectA.e2
+        assert self.js.objectA.e2 == None
+        #with pytest.raises(AttributeError):
+        #    self.js.objectA.e2
 
     def test_dump(self):
         import json
