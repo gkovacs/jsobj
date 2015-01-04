@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: 673eca544291f6b5a6106dfb7a2d30e4
+# md5: 7dd958922daa0826b681e2a8859192e6
 # coding: utf-8
 
 """
@@ -18,7 +18,7 @@ except:
   HERE = os.path.abspath(os.getcwd())
 
 __author__ = 'Geza Kovacs'
-__version__ = open(os.path.join(HERE, '..', 'VERSION')).read()[:-1]
+__version__ = open(os.path.join(HERE, 'VERSION')).read()[:-1]
 #__version__ = '1.0.0'
 __license__ = 'MIT'
 

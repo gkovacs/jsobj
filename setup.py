@@ -54,6 +54,7 @@ setup(
     author_email='geza0kovacs@gmail.com',
     url='https://github.com/gkovacs/jsobj',
     packages=find_packages(exclude=['ez_setup', 'tests', 'tests.*']),
+    package_data={'jsobj': ['VERSION']},
     tests_require=['pytest'],
     cmdclass={'test': PyTest},
     license='MIT',
