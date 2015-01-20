@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-# md5: bd2b40564e89f760993f188ccec2c416
+# md5: f89258bb6043eac96b17264408e5073e
 # coding: utf-8
 
 """
@@ -102,5 +102,11 @@ class Object(object):
 
   def iterkeys(self):
     return self.__dict__.iterkeys()
+
+  def values(self):
+    return self.__dict__.values()
+
+  def itervalues(self):
+    return self.__dict__.itervalues()
 
 
